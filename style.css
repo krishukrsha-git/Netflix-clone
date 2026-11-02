@@ -1,0 +1,563 @@
+@font-face {
+    font-family: Netflix-Sans-Regular;
+    src: url("assets/font/netflix-sans-font/NetflixSans-Regular.otf");
+}
+
+@font-face {
+    font-family: Netflix-Sans-Bold;
+    src: url("assets/font/netflix-sans-font/NetflixSans-Bold.otf");
+}
+
+
+:root {
+    --btn-bg-color: #E50914;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    font-family: Netflix-Sans-regular;
+}
+
+header {
+    width: 100%;
+    max-width: 1920px;
+    height: 95vh;
+    background-image: url("assets/image/bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    margin: auto;
+    position: relative;
+}
+
+.opacity {
+    width: 100%;
+    max-width: 1920px;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    max-width: 1920px;
+    margin: auto;
+    position: relative;
+    z-index: 10;
+    padding: 19px 0px;
+}
+
+.logo img {
+    width: 150px;
+    height: 50px;
+}
+
+.right-side {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.lang-select {
+    border: 0.01px solid rgb(129, 129, 129);
+    background-color: rgba(0, 0, 0, 0.497);
+    padding: 6px 13px;
+    border-radius: 5px;
+}
+
+.lang-select select {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding-left: 17px;
+}
+
+.lang-select select option {
+    color: black;
+    background-color: white;
+}
+
+.lang-select img {
+    position: absolute;
+    top: 38px;
+}
+
+.sign-btn {
+    background-color: var(--btn-bg-color);
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+    padding: 8px 14px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.flex1 {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    height: 37em;
+}
+
+.flex1 .head {
+    text-align: center;
+}
+
+.head h1 {
+    font-family: Netflix-Sans-Bold;
+    font-size: 55px;
+    width: 470px;
+}
+
+.head p {
+    font-family: Netflix-Sans-Regular;
+    font-size: 20px;
+    padding-top: 18px;
+    font-weight: bolder;
+}
+
+.email-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.flex2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.flex2 input {
+    background-color: #0000007c;
+    border: 0.1px solid rgb(136, 136, 136);
+    border-radius: 5px;
+    width: 380px;
+    height: 57px;
+    color: #9796A5;
+    font-size: 17px;
+}
+
+.flex2 label {
+    display: flex;
+    align-items: center;
+    background-color: var(--btn-bg-color);
+    padding: 12.5px 27px 14px 20px;
+    border-radius: 5px;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.flex2 label img {
+    padding-left: 10px;
+}
+
+.curved-design {
+    position: relative;
+    height: 50px;
+    background: radial-gradient(ellipse at top, #0a0f2c 0%, #000 70%);
+    overflow: hidden;
+}
+
+.curved-design::before {
+    position: absolute;
+    background: radial-gradient(ellipse at top, rgba(255, 0, 76, 1) 0%, rgba(255, 0, 76, 0.8) 40%, rgba(255, 0, 76, 0.1) 100%);
+    height: 5px;
+    content: "";
+    top: 10px;
+    left: 0;
+    right: 0;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+}
+
+main {
+    color: white;
+}
+
+.card img {
+    width: 180px;
+    border-radius: 10px;
+}
+
+section {
+    width: 80vw;
+    max-width: 1520px;
+    margin: auto;
+    margin-top: 60px;
+}
+
+
+.scrollbar {
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 275px;
+    gap: 40px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    position: relative;
+    transition: all 200ms ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.headline {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.number {
+    position: absolute;
+    font-family: Netflix-Sans-Bold;
+    font-size: 111px;
+    font-weight: bolder;
+    top: 112px;
+    color: black;
+    left: -23px;
+    -webkit-text-stroke: 2px white;
+}
+
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 25px;
+}
+
+
+.reasons {
+    /* width: 16em; */
+    height: 16em;
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.reasons h1 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.reasons span {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+}
+
+.Questions {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5.5em;
+    background-color: #2D2D2D;
+    font-weight: lighter;
+    margin-top: 7px;
+}
+
+.Questions h2 {
+    font-weight: 100;
+    margin-left: 20px;
+}
+
+.Questions img {
+    font-weight: bolder;
+    margin-right: 20px;
+}
+
+.Questions:hover {
+    background-color: #414141;
+    transition: all 300ms ease-in-out;
+}
+
+footer {
+    margin: 90px 0px;
+    color: #B3B3B3;
+}
+
+
+.flex3 input {
+    width: 580px;
+}
+
+section span {
+    text-decoration: underline;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.links a {
+    color: #B3B3B3;
+    font-size: 0.9em;
+}
+
+.bottom-lang-select {
+    color: white;
+}
+
+.flex5 {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.flex5 p {
+    font-size: 0.8em;
+}
+
+.bottom-lang-select {
+    border: 0.01px solid rgb(129, 129, 129);
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0.497);
+    padding: 6px 13px;
+    border-radius: 5px;
+}
+
+.bottom-lang-select select {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+@media (min-width:1920px) {
+    nav {
+        width: 75em;
+    }
+
+    .head h1 {
+        font-size: 70px;
+        width: 600px;
+    }
+
+    .flex1 {
+        height: 50em;
+    }
+
+    .one {
+        max-width: 1190px;
+    }
+
+    .card img {
+        width: 220px;
+    }
+
+    .number {
+        font-size: 111px;
+        font-weight: bolder;
+        top: 165px;
+        left: -23px;
+    }
+
+    section {
+        max-width: 1190px;
+
+    }
+
+}
+
+@media (max-width:1350px) {
+    header {
+        height: 85vh;
+    }
+
+    .head h1 {
+        font-family: Netflix-Sans-Regular;
+        font-size: 40px;
+        width: 470px;
+    }
+
+    .flex1 {
+        height: 31em;
+    }
+
+    .head p {
+        font-size: 16px;
+        padding-top: 10px;
+        font-weight: 200;
+    }
+
+    .flex2 input {
+        width: 380px;
+        height: 57px;
+    }
+
+    .email-input p {
+        width: 420px;
+        font-weight: lighter;
+    }
+
+    section {
+        width: 90vw;
+    }
+
+    .grid1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid2 {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+}
+
+
+
+
+@media (max-width:950px) {
+    nav {
+        width: 95vw;
+        max-width: 950px;
+        padding: 19px 0px;
+    }
+
+    .logo img {
+        width: 100px;
+        height: 25px;
+    }
+
+    .lang-select img {
+        top: 27px;
+    }
+
+    header {
+        height: 75vh;
+    }
+
+    .grid1 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .grid2 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width:700px) {
+
+    header {
+        height: 65vh;
+    }
+
+    .flex2 {
+        flex-direction: column;
+    }
+
+    .flex2 input {
+        width: 90vw;
+        height: 57px;
+    }
+
+    .flex1 {
+        width: 90vw;
+        margin: auto;
+    }
+
+    .head h1 {
+        width: fit-content;
+        font-size: 30px;
+    }
+
+    .email-input p {
+        width: fit-content;
+        font-weight: lighter;
+    }
+
+    .card img {
+        width: 115px;
+    }
+
+    .number {
+        font-size: 70px;
+        top: 70px;
+        left: -12px;
+    }
+
+    .opacity {
+        height: 65vh;
+    }
+
+    .scrollbar {
+        height: 180px;
+        gap: 10px;
+        margin-top: 14px;
+    }
+
+    .headline {
+        font-size: 24px;
+        font-weight: normal;
+    }
+
+    .grid2 {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width:330px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .lang-select img {
+        top: 57px;
+    }
+
+    .right-side {
+        display: flex;
+        flex-direction: column;
+    }
+}
